@@ -1,0 +1,85 @@
+{
+  "result": [
+    {
+      "id": "1",
+      "info": [
+        {
+          "name": "TQ335X",
+          "processor": "TI AM3352,ARM Cortex-A8@1GHz",
+          "ram": "512MB",
+          "Nand flash": "1GB",
+          "OS": "Linux3.2/Android4.0/WinCE6.0/7.0"
+        }
+      ],
+      "img": "/assets/images/sensors/sensor1.jpg"
+    },
+    {
+      "id": "2",
+      "info": [
+        {
+          "name": "E4418",
+          "processor": "Samsung S5P4418",
+          "cpu": "1.6GHz ARM Quad Cortex-A9",
+          "ram": "1GB/2GB",
+          "eMMC": "8GB/16GB",
+          "OS": "Linux3.4/Android4.4"
+        }
+      ],
+      "img": "/assets/images/sensors/sensor2.jpg"
+    },
+    {
+      "id": "3",
+      "info": [
+        {
+          "name": "RP4418/6818",
+          "Chip set": "Samsung S5P4418 Quad-core ARM Cortex-A9/S5P6818  Octa-core ARM 64bit Cortex-A53",
+          "Frequency": "1.6GHz",
+          "RAM": "1GB/2GB",
+          "eMMC": "8GB/16GB",
+          "OS": "Android4.4/Ubuntu12.04/Linux+QT"
+        }
+      ],
+      "img": "/assets/images/sensors/sensor3.jpg"
+    },
+    {
+      "id": "4",
+      "info": [
+        {
+          "name": "TQ335X_CORE",
+          "Processor": "TI AM3352,ARM Cortex-A8@1GHz",
+          "RAM": "512MB",
+          "Nand flash": "1GB",
+          "OS": "Linux3.2/Android4.0/WinCE6.0/7.0"
+        }
+      ],
+      "img": "/assets/images/sensors/sensor4.jpg"
+    },
+    {
+      "id": "5",
+      "info": [
+        {
+          "name": "IBOX3399",
+          "CPU": "Rockchip3399，ARM Dual-Core Cortex-A72+ Quad Core Cortex-A53",
+          "Clock Speed": "2.0GHz*2+1.5GHz*4",
+          "RAM": "2GB/4GB DDR3",
+          "eMMC": "16GB/32GB",
+          "OS": "Android7.1/Ubuntu16.04"
+        }
+      ],
+      "img": "/assets/images/sensors/sensor5.jpg"
+    },
+    {
+      "id": "6",
+      "info": [
+        {
+          "name": "Easy287",
+          "Processor": "Freescale i.MX287,ARM9@454MHz",
+          "RAM": "128MB",
+          "Nand flash": "128MB/256MB",
+          "OS": "Linux3.14"
+        }
+      ],
+      "img": "/assets/images/sensors/sensor6.jpg"
+    }
+  ]
+}

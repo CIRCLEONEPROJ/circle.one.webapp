@@ -1,6 +1,6 @@
 import { AppPage } from './app.po';
 
-describe('circle.one.front App', () => {
+describe('circle.one App', () => {
   let page: AppPage;
 
   beforeEach(() => {
