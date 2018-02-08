@@ -1,7 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { MatButtonModule, MatCardModule } from '@angular/material';
-
+import { MatButtonModule, MatCardModule, MatGridList, MatGridListModule } from '@angular/material';
+import { HttpClientModule } from '@angular/common/http';
 
 import { AppComponent } from './app.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
@@ -12,10 +12,12 @@ import { StreamsComponent } from './pages/streams/streams.component';
 import { DatasetsComponent } from './pages/datasets/datasets.component';
 import { SensorsComponent } from './pages/sensors/sensors.component';
 import { FooterComponent } from './shared/components/footer/footer.component';
-import { HttpClientModule } from '@angular/common/http';
 import { AppRoutingModule } from './app-routing.module';
 import { Ng2CarouselamosModule } from 'ng2-carouselamos';
 import { CarouselComponent } from './shared/components/carousel/carousel.component';
+import { SensorService } from './core/services/sensor.service';
+import { KeyValueFilterPipe } from './core/pipes/key-value-filter.pipe';
+import { HomeComponent } from './pages/home/home.component';
 
 @NgModule({
   declarations: [
@@ -27,18 +29,21 @@ import { CarouselComponent } from './shared/components/carousel/carousel.compone
     DatasetsComponent,
     SensorsComponent,
     FooterComponent,
-    CarouselComponent
+    CarouselComponent,
+    KeyValueFilterPipe,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
     NgbModule.forRoot(),
     MatButtonModule,
     MatCardModule,
+    MatGridListModule,
     HttpClientModule,
     AppRoutingModule,
     Ng2CarouselamosModule
   ],
-  providers: [],
+  providers: [SensorService],
   bootstrap: [AppComponent]
 })
 export class AppModule {

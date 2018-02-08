@@ -1,3 +1,16 @@
-<p>
-  sensors works!
-</p>
+<div class="container">
+  <!--<div class="item-chart">Chart</div>-->
+  <h2 class="my-2 ml-3 h2-g">Sensors</h2>
+  <div class="row">
+    <div class="col-4" *ngFor="let sensor of content">
+      <div class="m-3 mat-card d-flex align-items-center justify-content-center flex-column">
+        <img src="{{sensor.img}}">
+        <p class="">{{sensor.info.name}}</p>
+        <button mat-raised-button color="accent">More details</button>
+        <!--<ul>-->
+          <!--<li *ngFor="let prop of sensor.info | keyValueFilter">{{prop.key}}: {{prop.value}}</li>-->
+        <!--</ul>-->
+      </div>
+    </div>
+  </div>
+</div>

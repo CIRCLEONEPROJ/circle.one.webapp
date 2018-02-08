@@ -6,8 +6,9 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./carousel.component.scss']
 })
 export class CarouselComponent implements OnInit {
-
+  items: Array<any> = [];
   constructor() {
+    // this.items = [];
   }
 
   ngOnInit() {

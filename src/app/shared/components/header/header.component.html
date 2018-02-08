@@ -1,10 +1,10 @@
 <header>
   <mat-card class="container-fluid p-2">
     <div class="container d-flex justify-content-between align-items-center">
-      <a href="/"><img src="./assets/images/logo.svg" alt="logo" class="logo"></a>
+      <a routerLink="home"><img src="./assets/images/logo.svg" alt="logo" class="logo"></a>
       <ul class="header-list">
         <li class="header-list__item" *ngFor="let item of menu">
-          <a mat-button color="warn" href="{{ item.href }}"> {{ item.name }} </a>
+          <a mat-button color="warn" routerLink="{{ item.href }}"> {{ item.name }} </a>
         </li>
       </ul>
     </div>
