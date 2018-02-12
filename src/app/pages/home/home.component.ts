@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { SensorService } from '../../core/services/sensor.service';
 import { StreamService } from '../../core/services/stream.service';
+import { DatasetService} from '../../core/services/dataset.service';
 
 @Component({
   selector: 'app-home',
@@ -10,8 +11,9 @@ import { StreamService } from '../../core/services/stream.service';
 export class HomeComponent implements OnInit {
   sensorItems;
   streamItems;
-
-  constructor( private sensorService: SensorService, private streamService: StreamService) { }
+  datasetItems;
+  
+  constructor( private sensorService: SensorService, private streamService: StreamService, private datasetService: DatasetService) { }
 
   ngOnInit() {
     this.sensorService.getData().subscribe( res => {
@@ -20,6 +22,9 @@ export class HomeComponent implements OnInit {
     });
     this.streamService.getStreams().subscribe( res => {
       this.streamItems = res;
+    });
+    this.datasetService.getData().subscribe( res => {
+      this.datasetItems = res;
     });
   }
 

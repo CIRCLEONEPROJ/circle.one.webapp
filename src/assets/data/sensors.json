@@ -8,6 +8,7 @@
         "Nand flash": "1GB",
         "OS": "Linux3.2/Android4.0/WinCE6.0/7.0"
       },
+    "price": 850.58,
     "img": "/assets/images/sensors/sensor1.jpg"
   },
   {
@@ -20,6 +21,7 @@
         "eMMC": "8GB/16GB",
         "OS": "Linux3.4/Android4.4"
       },
+    "price": 150.43,
     "img": "/assets/images/sensors/sensor2.jpg"
   },
   {
@@ -32,6 +34,7 @@
         "eMMC": "8GB/16GB",
         "OS": "Android4.4/Ubuntu12.04/Linux+QT"
       },
+    "price": 456.64,
     "img": "/assets/images/sensors/sensor3.jpg"
   },
   {
@@ -43,6 +46,7 @@
         "Nand flash": "1GB",
         "OS": "Linux3.2/Android4.0/WinCE6.0/7.0"
       },
+    "price": 370.04,
     "img": "/assets/images/sensors/sensor4.jpg"
   },
   {
@@ -55,6 +59,7 @@
         "eMMC": "16GB/32GB",
         "OS": "Android7.1/Ubuntu16.04"
       },
+    "price": 450.14,
     "img": "/assets/images/sensors/sensor5.jpg"
   },
   {
@@ -66,6 +71,7 @@
         "Nand flash": "128MB/256MB",
         "OS": "Linux3.14"
       },
+    "price": 420.64,
     "img": "/assets/images/sensors/sensor6.jpg"
   }
 ]

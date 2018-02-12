@@ -1,0 +1,74 @@
+[
+  {
+    "id": 1,
+    "name": "Smart City dataset for Toronto",
+    "verified": "Yes",
+    "type": "CO2",
+    "frequency": "Per minute",
+    "price": "0.43",
+    "img": "/assets/images/dataset-icon.png"
+  },
+  {
+    "id": 2,
+    "name": "Smart City dataset for Moscow",
+    "verified": "No",
+    "type": "Geolocated sensor reading",
+    "frequency": "Per hour",
+    "price": "300.56",
+    "img": "/assets/images/dataset-icon.png"
+  },
+  {
+    "id": 3,
+    "name": "Air quality sensor for Kiev",
+    "verified": "Yes",
+    "type": "CO2",
+    "frequency": "Per minute",
+    "price": "0.54",
+    "img": "/assets/images/dataset-icon.png"
+  },
+  {
+    "id": 4,
+    "name": "Pressure sensor on Washington",
+    "verified": "No",
+    "type": "Pressure",
+    "frequency": "Per hour",
+    "price": "450.54",
+    "img": "/assets/images/dataset-icon.png"
+  },
+  {
+    "id": 5,
+    "name": "Air quality sensor for Berlin",
+    "verified": "Yes",
+    "type": "CO2",
+    "frequency": "Per minute",
+    "price": "0.88",
+    "img": "/assets/images/dataset-icon.png"
+  },
+  {
+    "id": 6,
+    "name": "Dataset Smart City Sidney",
+    "verified": "Yes",
+    "type": "CO2, Pressure",
+    "frequency": "Per hour",
+    "price": "328.67",
+    "img": "/assets/images/dataset-icon.png"
+  },
+  {
+    "id": 7,
+    "name": "Smart City dataset for Minsk",
+    "verified": "No",
+    "type": "CO2, Pressure",
+    "frequency": "Per hour",
+    "price": "345.54",
+    "img": "/assets/images/dataset-icon.png"
+  },
+  {
+    "id": 8,
+    "name": "Air quality sensor for Odessa",
+    "verified": "Yes",
+    "type": "CO2",
+    "frequency": "Per hour",
+    "price": "670.45",
+    "img": "/assets/images/dataset-icon.png"
+  }
+]
