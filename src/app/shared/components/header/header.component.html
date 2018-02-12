@@ -4,7 +4,7 @@
       <a routerLink="home"><img src="./assets/images/logo.svg" alt="logo" class="logo"></a>
       <ul class="header-list">
         <li class="header-list__item" *ngFor="let item of menu">
-          <a mat-button color="warn" routerLink="{{ item.href }}"> {{ item.name }} </a>
+          <a mat-button color="warn" routerLink="{{ item.href }}" class="d-flex align-items-center"><i class="material-icons mr-2">{{ item.icon }}</i> {{ item.name }} </a>
         </li>
       </ul>
     </div>

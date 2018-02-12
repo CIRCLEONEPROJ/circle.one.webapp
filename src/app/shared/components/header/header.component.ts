@@ -7,10 +7,10 @@ import {Component, OnInit} from '@angular/core';
 })
 export class HeaderComponent implements OnInit {
   menu = [
-    {name: 'Streams', href: '/streams'},
-    {name: 'Datasets', href: '/datasets'},
-    {name: 'Sensors', href: '/sensors'},
-    {name: 'Dashboard', href: '/dashboard'}
+    {name: 'Streams', href: '/streams', icon: 'router'},
+    {name: 'Datasets', href: '/datasets', icon: 'cast_connected'},
+    {name: 'Sensors', href: '/sensors', icon: 'settings_remote'},
+    {name: 'Dashboard', href: '/dashboard', icon: 'dashboard'}
   ];
 
   constructor() {

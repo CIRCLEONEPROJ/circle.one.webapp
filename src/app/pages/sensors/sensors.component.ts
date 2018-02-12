@@ -11,7 +11,7 @@ export class SensorsComponent implements OnInit {
   constructor(private sensorService: SensorService) {
   }
 
-  content = [];
+  public content = [];
 
   ngOnInit() {
     this.sensorService.getData().subscribe(data => {

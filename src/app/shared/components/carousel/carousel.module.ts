@@ -11,4 +11,4 @@ import { CarouselComponent } from './carousel.component';
   ],
   declarations: []
 })
-export class CarouselModule { }
+export class CarouselModule {}

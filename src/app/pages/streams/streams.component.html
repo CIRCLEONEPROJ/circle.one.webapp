@@ -1,3 +1,38 @@
-<p>
-  streams works!
-</p>
+<div class="container mat-card mt-4">
+  <div class="">
+    <mat-form-field class="d-block" color="warn">
+      <input matInput (keyup)="applyFilter($event.target.value)" placeholder="Filter">
+    </mat-form-field>
+  </div>
+  <mat-table #table [dataSource]="dataSource">
+    <ng-container matColumnDef="name">
+      <mat-header-cell *matHeaderCellDef> Name</mat-header-cell>
+      <mat-cell *matCellDef="let element" (click)="showModal()"> {{element.containerId}}</mat-cell>
+    </ng-container>
+
+    <ng-container matColumnDef="verified">
+      <mat-header-cell *matHeaderCellDef> Verified</mat-header-cell>
+      <mat-cell *matCellDef="let element"> {{element.Verified}}</mat-cell>
+    </ng-container>
+
+    <ng-container matColumnDef="type">
+      <mat-header-cell *matHeaderCellDef> Type</mat-header-cell>
+      <mat-cell *matCellDef="let element"> {{element.type}}</mat-cell>
+    </ng-container>
+
+    <ng-container matColumnDef="frequency">
+      <mat-header-cell *matHeaderCellDef>Frequency</mat-header-cell>
+      <mat-cell *matCellDef="let element"> {{element.Frequency}}</mat-cell>
+    </ng-container>
+
+    <ng-container matColumnDef="price/hour">
+      <mat-header-cell *matHeaderCellDef> Price/Hour </mat-header-cell>
+      <mat-cell *matCellDef="let element">$ {{element.price}}</mat-cell>
+    </ng-container>
+
+    <mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>
+    <mat-row *matRowDef="let row; columns: displayedColumns;"></mat-row>
+
+  </mat-table>
+
+</div>

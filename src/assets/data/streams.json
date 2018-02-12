@@ -1,0 +1,206 @@
+[
+  {
+    "id": 1,
+    "Verified": "Yes",
+    "Frequency": "Per hour",
+    "containerId": "bpost-co2-100",
+    "type": "CO2",
+    "macAddress": "2D8784C003333009",
+    "timestamp": 1518267639110,
+    "doubleMeterValue": 28.62942851908874,
+    "location": {
+      "latitude": 51,
+      "longitude": 4.4
+    },
+    "locationFriendlyName": "u1, proximus bld",
+    "price": "500.23",
+    "img": "/assets/images/chart-icon.png"
+  },
+  {
+    "id": 2,
+    "Verified": "Yes",
+    "Frequency": "Per minute",
+    "containerId": "bpost-co2-99",
+    "type": "CO2",
+    "macAddress": "2D8784C003333008",
+    "timestamp": 1518267639106,
+    "doubleMeterValue": 54.32756331909643,
+    "location": {
+      "latitude": 50.5,
+      "longitude": 4.6
+    },
+    "locationFriendlyName": "u1, proximus bld",
+    "price": "0.22",
+    "img": "/assets/images/chart-icon.png"
+  },
+  {
+    "id": 3,
+    "Verified": "No",
+    "Frequency": "Per second",
+    "containerId": "bpost-co2-98",
+    "type": "CO2",
+    "macAddress": "2D8784C003333007",
+    "timestamp": 1518267639102,
+    "doubleMeterValue": 34.59646851999065,
+    "location": {
+      "latitude": 49,
+      "longitude": 5.4
+    },
+    "locationFriendlyName": "u1, proximus bld",
+    "price": "0.23",
+    "img": "/assets/images/chart-icon.png"
+  },
+  {
+    "id": 4,
+    "Verified": "Yes",
+    "Frequency": "Per minute",
+    "containerId": "bpost-co2-97",
+    "type": "CO2",
+    "macAddress": "2D8784C003333006",
+    "timestamp": 1518267639098,
+    "doubleMeterValue": 28.19562851908945,
+    "location": {
+      "latitude": 52,
+      "longitude": 4.8
+    },
+    "locationFriendlyName": "u1, proximus bld",
+    "price": "0.32",
+    "img": "/assets/images/chart-icon.png"
+  },
+  {
+    "id": 5,
+    "Verified": "Yes",
+    "Frequency": "Per minute",
+    "containerId": "bpost-co2-96",
+    "type": "CO2",
+    "macAddress": "2D8784C003333005",
+    "timestamp": 1518267639094,
+    "doubleMeterValue": 28.32453851565478,
+    "location": {
+      "latitude": 51.5,
+      "longitude": 4.9
+    },
+    "locationFriendlyName": "u1, proximus bld",
+    "price": "0.14",
+    "img": "/assets/images/chart-icon.png"
+  },
+  {
+    "id": 6,
+    "Verified": "Yes",
+    "Frequency": "Per minute",
+    "containerId": "bpost-co2-95",
+    "type": "CO2",
+    "macAddress": "2D8784C003333004",
+    "timestamp": 1518267639090,
+    "doubleMeterValue": 28.593908519354562,
+    "location": {
+      "latitude": 36,
+      "longitude": 1.4
+    },
+    "locationFriendlyName": "u1, proximus bld",
+    "price": "0.34",
+    "img": "/assets/images/chart-icon.png"
+  },
+  {
+    "id": 7,
+    "Verified": "No",
+    "Frequency": "Per minute",
+    "containerId": "bpost-co2-94",
+    "type": "CO2",
+    "macAddress": "2D8784C003333003",
+    "timestamp": 1518267639086,
+    "doubleMeterValue": 28.67850851989074,
+    "location": {
+      "latitude": 48,
+      "longitude": 3.4
+    },
+    "locationFriendlyName": "u1, proximus bld",
+    "price": "0.23",
+    "img": "/assets/images/chart-icon.png"
+  },
+  {
+    "id": 8,
+    "Verified": "No",
+    "Frequency": "Per minute",
+    "containerId": "bpost-co2-93",
+    "type": "CO2",
+    "macAddress": "2D8784C003333003",
+    "timestamp": 1518267639086,
+    "doubleMeterValue": 28.67850851989074,
+    "location": {
+      "latitude": 48,
+      "longitude": 3.4
+    },
+    "locationFriendlyName": "u1, proximus bld",
+    "price": "0.23",
+    "img": "/assets/images/chart-icon.png"
+  },
+  {
+    "id": 9,
+    "Verified": "No",
+    "Frequency": "Per minute",
+    "containerId": "bpost-temp-92",
+    "type": "Temperature",
+    "macAddress": "2D8784C003333003",
+    "timestamp": 1518267639086,
+    "doubleMeterValue": 28.67850851989074,
+    "location": {
+      "latitude": 48,
+      "longitude": 3.4
+    },
+    "locationFriendlyName": "u1, proximus bld",
+    "price": "0.23",
+    "img": "/assets/images/chart-icon.png"
+  },
+  {
+    "id": 10,
+    "Verified": "No",
+    "Frequency": "Per minute",
+    "containerId": "bpost-co2-91",
+    "type": "CO2",
+    "macAddress": "2D8784C003333003",
+    "timestamp": 1518267639086,
+    "doubleMeterValue": 28.67850851989074,
+    "location": {
+      "latitude": 48,
+      "longitude": 3.4
+    },
+    "locationFriendlyName": "u1, proximus bld",
+    "price": "0.23",
+    "img": "/assets/images/chart-icon.png"
+  },
+  {
+    "id": 11,
+    "Verified": "No",
+    "Frequency": "Per minute",
+    "containerId": "bpost-co2-90",
+    "type": "CO2",
+    "macAddress": "2D8784C003333003",
+    "timestamp": 1518267639086,
+    "doubleMeterValue": 28.67850851989074,
+    "location": {
+      "latitude": 48,
+      "longitude": 3.4
+    },
+    "locationFriendlyName": "u1, proximus bld",
+    "price": "0.23",
+    "img": "/assets/images/chart-icon.png"
+  },
+  {
+    "id": 12,
+    "Verified": "No",
+    "Frequency": "Per minute",
+    "containerId": "bpost-temp-89",
+    "type": "Temperature",
+    "macAddress": "2D8784C003333003",
+    "timestamp": 1518267639086,
+    "doubleMeterValue": 12.67850851989074,
+    "location": {
+      "latitude": 48,
+      "longitude": 3.4
+    },
+    "locationFriendlyName": "u1, proximus bld",
+    "price": "0.23",
+    "img": "/assets/images/chart-icon.png"
+  }
+]

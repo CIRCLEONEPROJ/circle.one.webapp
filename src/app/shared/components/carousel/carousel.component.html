@@ -1,24 +1,28 @@
-<div id="container">
-  <div
-    ng2-carouselamos
-    class="slides-wrapper"
-    [items]="items"
-    [width]="800"
-    [$prev]="prev"
-    [$next]="next"
-    [$item]="item"
-  >
+<div class="mat-card p-0 m-3">
+  <div id="container">
+    <div
+      ng2-carouselamos
+      class="slides-wrapper"
+      [items]="items"
+      [width]="1200"
+      [$prev]="prev"
+      [$next]="next"
+      [$item]="item"
+    >
+    </div>
   </div>
-</div>
 
-<ng-template #prev>
-  <img src="" id="left" class="" />
-</ng-template>
-<ng-template #next>
-  <img src="" id="right" class="" />
-</ng-template>
-<ng-template #item let-item let-i="index">
-  <div class="items">
-    <img src="{{ item.name }}">
-  </div>
-</ng-template>
+  <ng-template #prev>
+    <div class="" id="left"><i class="material-icons">keyboard_arrow_left</i></div>
+  </ng-template>
+  <ng-template #next>
+    <div class="" id="right"><i class="material-icons">keyboard_arrow_right</i></div>
+  </ng-template>
+  <ng-template #item let-item let-i="index">
+    <div class="items d-flex flex-column justify-content-between align-items-center">
+      <img [src]="item.img" class="mb-3">
+      <p>{{item.name}}</p>
+      <button mat-raised-button>View details</button>
+    </div>
+  </ng-template>
+</div>

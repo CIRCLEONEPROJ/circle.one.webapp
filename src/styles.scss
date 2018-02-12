@@ -8,9 +8,19 @@ html {
 
 html, body {
   height: 100%;
+  margin: 0;
+}
+.app-content-g {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+.app-footer-g {
+  flex: 1;
 }
 a, button {
   text-decoration: none;
+  color: #333333;
   &:hover {
     text-decoration: none;
   }
@@ -25,6 +35,9 @@ body {
   background-color: #fbfbfb;
   font-size: 1rem;
   font-family: Roboto, sans-serif;
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
 }
 
 ul {
@@ -37,4 +50,14 @@ h1, h2, h3, h4, h5, h6 {
 
 .h2-g {
   color: #555;
+  font-weight: 100;
+}
+
+
+.mat-row {
+  transition: .4s;
+  cursor: pointer;
+  &:hover {
+    background-color: rgba(246, 163, 140, 0.48);
+  }
 }
