@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { StreamService } from '../../core/services/stream.service';
 import { MatTableDataSource } from '@angular/material';
+import { Router } from '@angular/router';
 
 
 
@@ -21,12 +22,15 @@ export class StreamsComponent implements OnInit {
     this.dataSource.filter = filterValue;
   }
 
-  constructor(private svc: StreamService) {
+  constructor(private svc: StreamService, private router: Router) {
   }
 
   ngOnInit() {
     this.svc.getStreams().subscribe(data => {
       this.dataSource.data = data;
     });
+  }
+  goToItem(row) {
+    this.router.navigate(['/streams', row.id]);
   }
 }

@@ -11,7 +11,7 @@
   <mat-table #table [dataSource]="dataSource">
     <ng-container matColumnDef="name">
       <mat-header-cell *matHeaderCellDef> Name</mat-header-cell>
-      <mat-cell *matCellDef="let element" (click)="showModal()"> {{element.containerId}}</mat-cell>
+      <mat-cell *matCellDef="let element"> {{element.containerId}}</mat-cell>
     </ng-container>
 
     <ng-container matColumnDef="verified">
@@ -35,7 +35,7 @@
     </ng-container>
 
     <mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>
-    <mat-row *matRowDef="let row; columns: displayedColumns;"></mat-row>
+    <mat-row (click)="goToItem(row)" *matRowDef="let row; columns: displayedColumns;"></mat-row>
 
   </mat-table>
 

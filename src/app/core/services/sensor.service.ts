@@ -11,10 +11,18 @@ export class SensorService {
   constructor(private http: HttpClient) {
   }
 
-  getData(): Observable<any> {
+  getData(): Observable<any[]> {
     return this.http.get<any[]>(this.sensorsHref)
       .pipe(map((data) => {
         return data.map((item) => ({...item, name: item.info.name}));
+      }));
+  }
+
+  getItem(id): Observable<any> {
+    return this.getData()
+      .pipe(map((data) => {
+        const index = data.findIndex((item) => item.id === id);
+        return index >= 0 ? data[index] : null;
       }));
   }
 }

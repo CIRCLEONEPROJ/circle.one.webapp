@@ -6,7 +6,7 @@
     "type": "CO2",
     "frequency": "Per minute",
     "price": "0.43",
-    "img": "/assets/images/dataset-icon.png"
+    "img": "/assets/images/dataset-icon.svg"
   },
   {
     "id": 2,
@@ -15,7 +15,7 @@
     "type": "Geolocated sensor reading",
     "frequency": "Per hour",
     "price": "300.56",
-    "img": "/assets/images/dataset-icon.png"
+    "img": "/assets/images/dataset-icon.svg"
   },
   {
     "id": 3,
@@ -24,7 +24,7 @@
     "type": "CO2",
     "frequency": "Per minute",
     "price": "0.54",
-    "img": "/assets/images/dataset-icon.png"
+    "img": "/assets/images/dataset-icon.svg"
   },
   {
     "id": 4,
@@ -33,7 +33,7 @@
     "type": "Pressure",
     "frequency": "Per hour",
     "price": "450.54",
-    "img": "/assets/images/dataset-icon.png"
+    "img": "/assets/images/dataset-icon.svg"
   },
   {
     "id": 5,
@@ -42,7 +42,7 @@
     "type": "CO2",
     "frequency": "Per minute",
     "price": "0.88",
-    "img": "/assets/images/dataset-icon.png"
+    "img": "/assets/images/dataset-icon.svg"
   },
   {
     "id": 6,
@@ -51,7 +51,7 @@
     "type": "CO2, Pressure",
     "frequency": "Per hour",
     "price": "328.67",
-    "img": "/assets/images/dataset-icon.png"
+    "img": "/assets/images/dataset-icon.svg"
   },
   {
     "id": 7,
@@ -60,7 +60,7 @@
     "type": "CO2, Pressure",
     "frequency": "Per hour",
     "price": "345.54",
-    "img": "/assets/images/dataset-icon.png"
+    "img": "/assets/images/dataset-icon.svg"
   },
   {
     "id": 8,
@@ -69,6 +69,6 @@
     "type": "CO2",
     "frequency": "Per hour",
     "price": "670.45",
-    "img": "/assets/images/dataset-icon.png"
+    "img": "/assets/images/dataset-icon.svg"
   }
 ]

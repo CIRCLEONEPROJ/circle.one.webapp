@@ -18,4 +18,11 @@ export class StreamService {
       }));
   }
 
+  getItem(id): Observable<any> {
+    return this.getStreams()
+      .pipe(map((data) => {
+        const index = data.findIndex((item) => item.id === id);
+        return index >= 0 ? data[index] : null;
+      }));
+  }
 }

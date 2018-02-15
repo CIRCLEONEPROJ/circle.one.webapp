@@ -1,0 +1,78 @@
+<div class="container mt-4">
+  <h4 class="h2-g mb-4">Sensor {{sensor.info.name}}</h4>
+  <div class="row mb-4">
+    <div class="col-4">
+      <div class="col-12 mat-card d-flex align-items-center justify-content-center h-100">
+        <img src="{{sensor.img}}" class="img-fluid">
+      </div>
+    </div>
+    <div class="col-8">
+      <div class="col-12 mat-card d-flex">
+        <div class="col-6 d-flex flex-column align-items-start justify-content-center">
+          <div class="w-100">
+            <div class="d-flex align-items-center justify-content-between">
+              <span>Rating</span>
+              <div>
+                <mat-icon color="warn" class="material-icons">star</mat-icon>
+                <mat-icon color="warn" class="material-icons">star</mat-icon>
+                <mat-icon color="warn" class="material-icons">star</mat-icon>
+                <mat-icon color="warn" class="material-icons">star_half</mat-icon>
+                <mat-icon color="warn" class="material-icons">star_border</mat-icon>
+              </div>
+            </div>
+            <hr>
+            <p>CPU: {{sensor.info.processor}}</p>
+            <p>RAM: {{sensor.info.ram}}</p>
+            <p>OS: {{sensor.info.OS}}</p>
+          </div>
+          <div class="w-100 my-4">
+            <p>Price: $ {{sensor.price}}</p>
+            <mat-form-field color="warn" class="mr-3 w-25">
+              <input matInput placeholder="Quantity" type="number" min="1">
+            </mat-form-field>
+            <button mat-raised-button color="warn" class="w-100">Buy</button>
+          </div>
+        </div>
+        <div class="col-6">
+          <p>Short Info</p>
+          <hr>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus adipisci amet assumenda autem beatae
+            blanditiis consectetur fuga hic incidunt nobis nostrum omnis, perferendis porro praesentium quaerat quisquam
+            unde vel voluptatum!</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="d-flex">
+    <div class="col-12 mat-card">
+      <mat-tab-group color="warn">
+        <mat-tab label="Description">
+          <div class="m-4">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus adipisci amet assumenda autem beatae
+              blanditiis consectetur fuga hic incidunt nobis nostrum omnis, perferendis porro praesentium quaerat
+              quisquam
+              unde vel voluptatum!</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus adipisci amet assumenda autem beatae
+              blanditiis consectetur fuga hic incidunt nobis nostrum omnis, perferendis porro praesentium quaerat
+              quisquam
+              unde vel voluptatum!</p>
+          </div>
+        </mat-tab>
+        <mat-tab label="Vendor's contacts">
+          <div class="m-4">
+            <p><b>Name:</b> John Doe</p>
+            <p><b>E-mail:</b> example@mail.com</p>
+            <p><b>URL: </b><a href="">http://vendor.{{sensor.name}}.com</a></p>
+          </div>
+        </mat-tab>
+        <mat-tab label="Manufacturer">
+          <div class="m-4">
+            <p><b>Name:</b> {{sensor.name}} company</p>
+            <p><b>E-mail:</b> example@mail.com</p>
+            <p><b>URL: </b><a href="">http://manufacturer.{{sensor.name}}.com</a></p>
+          </div>
+        </mat-tab>
+      </mat-tab-group>
+    </div>
+  </div>
+</div>

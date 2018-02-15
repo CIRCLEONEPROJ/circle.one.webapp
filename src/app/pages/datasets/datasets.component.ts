@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { MatTableDataSource } from '@angular/material';
 import { DatasetService } from '../../core/services/dataset.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-datasets',
@@ -19,12 +20,16 @@ export class DatasetsComponent implements OnInit {
     this.dataSource.filter = filterValue;
   }
 
-  constructor(private svc: DatasetService) { }
+  constructor(private svc: DatasetService, private router: Router) { }
 
   ngOnInit() {
     this.svc.getData().subscribe(data => {
       this.dataSource.data = data;
     });
+  }
+
+  goToItem(row) {
+    this.router.navigate(['/datasets', row.id]);
   }
 
 }

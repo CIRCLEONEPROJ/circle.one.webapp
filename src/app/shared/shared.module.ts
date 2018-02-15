@@ -1,6 +1,11 @@
 import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
-import { MatButtonModule, MatCardModule, MatDialogModule, MatFormFieldModule, MatInputModule, MatTableModule } from '@angular/material';
+import { CommonModule, DatePipe } from '@angular/common';
+import {
+  MatButtonModule, MatCardModule, MatDialogModule, MatFormFieldModule, MatIconModule, MatInputModule, MatTableModule,
+  MatTabsModule
+} from '@angular/material';
+import { ChartComponent } from './components/chart/chart.component';
+import { ChartsModule } from 'ng2-charts';
 
 @NgModule({
   imports: [
@@ -10,9 +15,12 @@ import { MatButtonModule, MatCardModule, MatDialogModule, MatFormFieldModule, Ma
     MatInputModule,
     MatCardModule,
     MatButtonModule,
-    MatDialogModule
+    MatDialogModule,
+    MatTabsModule,
+    MatIconModule,
+    ChartsModule
   ],
-  declarations: [],
+  declarations: [ChartComponent],
   exports: [
     CommonModule,
     MatTableModule,
@@ -20,8 +28,13 @@ import { MatButtonModule, MatCardModule, MatDialogModule, MatFormFieldModule, Ma
     MatInputModule,
     MatCardModule,
     MatButtonModule,
-    MatDialogModule
-  ]
+    MatDialogModule,
+    MatTabsModule,
+    MatIconModule,
+    ChartComponent,
+    ChartsModule
+  ],
+  providers: [DatePipe]
 })
 export class SharedModule {
 }

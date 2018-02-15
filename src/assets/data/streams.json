@@ -14,7 +14,7 @@
     },
     "locationFriendlyName": "u1, proximus bld",
     "price": "500.23",
-    "img": "/assets/images/chart-icon.png"
+    "img": "/assets/images/chart-icon.svg"
   },
   {
     "id": 2,
@@ -31,7 +31,7 @@
     },
     "locationFriendlyName": "u1, proximus bld",
     "price": "0.22",
-    "img": "/assets/images/chart-icon.png"
+    "img": "/assets/images/chart-icon.svg"
   },
   {
     "id": 3,
@@ -48,7 +48,7 @@
     },
     "locationFriendlyName": "u1, proximus bld",
     "price": "0.23",
-    "img": "/assets/images/chart-icon.png"
+    "img": "/assets/images/chart-icon.svg"
   },
   {
     "id": 4,
@@ -65,7 +65,7 @@
     },
     "locationFriendlyName": "u1, proximus bld",
     "price": "0.32",
-    "img": "/assets/images/chart-icon.png"
+    "img": "/assets/images/chart-icon.svg"
   },
   {
     "id": 5,
@@ -82,7 +82,7 @@
     },
     "locationFriendlyName": "u1, proximus bld",
     "price": "0.14",
-    "img": "/assets/images/chart-icon.png"
+    "img": "/assets/images/chart-icon.svg"
   },
   {
     "id": 6,
@@ -99,7 +99,7 @@
     },
     "locationFriendlyName": "u1, proximus bld",
     "price": "0.34",
-    "img": "/assets/images/chart-icon.png"
+    "img": "/assets/images/chart-icon.svg"
   },
   {
     "id": 7,
@@ -116,7 +116,7 @@
     },
     "locationFriendlyName": "u1, proximus bld",
     "price": "0.23",
-    "img": "/assets/images/chart-icon.png"
+    "img": "/assets/images/chart-icon.svg"
   },
   {
     "id": 8,
@@ -133,7 +133,7 @@
     },
     "locationFriendlyName": "u1, proximus bld",
     "price": "0.23",
-    "img": "/assets/images/chart-icon.png"
+    "img": "/assets/images/chart-icon.svg"
   },
   {
     "id": 9,
@@ -150,7 +150,7 @@
     },
     "locationFriendlyName": "u1, proximus bld",
     "price": "0.23",
-    "img": "/assets/images/chart-icon.png"
+    "img": "/assets/images/chart-icon.svg"
   },
   {
     "id": 10,
@@ -167,7 +167,7 @@
     },
     "locationFriendlyName": "u1, proximus bld",
     "price": "0.23",
-    "img": "/assets/images/chart-icon.png"
+    "img": "/assets/images/chart-icon.svg"
   },
   {
     "id": 11,
@@ -184,7 +184,7 @@
     },
     "locationFriendlyName": "u1, proximus bld",
     "price": "0.23",
-    "img": "/assets/images/chart-icon.png"
+    "img": "/assets/images/chart-icon.svg"
   },
   {
     "id": 12,
@@ -201,6 +201,6 @@
     },
     "locationFriendlyName": "u1, proximus bld",
     "price": "0.23",
-    "img": "/assets/images/chart-icon.png"
+    "img": "/assets/images/chart-icon.svg"
   }
 ]

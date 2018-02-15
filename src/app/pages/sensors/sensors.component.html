@@ -6,9 +6,9 @@
       <div class="item-card m-3 mat-card d-flex align-items-center justify-content-center flex-column">
         <img src="{{sensor.img}}">
         <p class="">{{sensor.info.name}}</p>
-        <button mat-raised-button color="warn">More details</button>
+        <a [routerLink]=[sensor.id] mat-raised-button color="warn">More details</a>
         <!--<ul>-->
-          <!--<li *ngFor="let prop of sensor.info | keyValueFilter">{{prop.key}}: {{prop.value}}</li>-->
+        <!--<li *ngFor="let prop of sensor.info | keyValueFilter">{{prop.key}}: {{prop.value}}</li>-->
         <!--</ul>-->
       </div>
     </div>
