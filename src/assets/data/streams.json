@@ -14,7 +14,8 @@
     },
     "locationFriendlyName": "u1, proximus bld",
     "price": "500.23",
-    "img": "/assets/images/chart-icon.svg"
+    "img": "/assets/images/chart-icon.svg",
+    "date": "14/02/18 12:20:34"
   },
   {
     "id": 2,
@@ -31,7 +32,8 @@
     },
     "locationFriendlyName": "u1, proximus bld",
     "price": "0.22",
-    "img": "/assets/images/chart-icon.svg"
+    "img": "/assets/images/chart-icon.svg",
+    "date": "14/02/18 13:23:35"
   },
   {
     "id": 3,
@@ -48,7 +50,8 @@
     },
     "locationFriendlyName": "u1, proximus bld",
     "price": "0.23",
-    "img": "/assets/images/chart-icon.svg"
+    "img": "/assets/images/chart-icon.svg",
+    "date": "15/02/18 10:54:44"
   },
   {
     "id": 4,
@@ -65,7 +68,8 @@
     },
     "locationFriendlyName": "u1, proximus bld",
     "price": "0.32",
-    "img": "/assets/images/chart-icon.svg"
+    "img": "/assets/images/chart-icon.svg",
+    "date": "15/02/18 12:20:14"
   },
   {
     "id": 5,
@@ -82,7 +86,8 @@
     },
     "locationFriendlyName": "u1, proximus bld",
     "price": "0.14",
-    "img": "/assets/images/chart-icon.svg"
+    "img": "/assets/images/chart-icon.svg",
+    "date": "14/02/18 09:54:34"
   },
   {
     "id": 6,
@@ -99,7 +104,8 @@
     },
     "locationFriendlyName": "u1, proximus bld",
     "price": "0.34",
-    "img": "/assets/images/chart-icon.svg"
+    "img": "/assets/images/chart-icon.svg",
+    "date": "14/02/18 16:20:34"
   },
   {
     "id": 7,
@@ -116,7 +122,8 @@
     },
     "locationFriendlyName": "u1, proximus bld",
     "price": "0.23",
-    "img": "/assets/images/chart-icon.svg"
+    "img": "/assets/images/chart-icon.svg",
+    "date": "14/02/18 18:35:30"
   },
   {
     "id": 8,
@@ -133,7 +140,8 @@
     },
     "locationFriendlyName": "u1, proximus bld",
     "price": "0.23",
-    "img": "/assets/images/chart-icon.svg"
+    "img": "/assets/images/chart-icon.svg",
+    "date": "14/02/18 20:23:54"
   },
   {
     "id": 9,
@@ -150,7 +158,8 @@
     },
     "locationFriendlyName": "u1, proximus bld",
     "price": "0.23",
-    "img": "/assets/images/chart-icon.svg"
+    "img": "/assets/images/chart-icon.svg",
+    "date": "15/02/18 17:43:54"
   },
   {
     "id": 10,
@@ -167,7 +176,8 @@
     },
     "locationFriendlyName": "u1, proximus bld",
     "price": "0.23",
-    "img": "/assets/images/chart-icon.svg"
+    "img": "/assets/images/chart-icon.svg",
+    "date": "14/02/18 20:43:10"
   },
   {
     "id": 11,
@@ -184,7 +194,8 @@
     },
     "locationFriendlyName": "u1, proximus bld",
     "price": "0.23",
-    "img": "/assets/images/chart-icon.svg"
+    "img": "/assets/images/chart-icon.svg",
+    "date": "14/02/18 15:45:12"
   },
   {
     "id": 12,
@@ -201,6 +212,7 @@
     },
     "locationFriendlyName": "u1, proximus bld",
     "price": "0.23",
-    "img": "/assets/images/chart-icon.svg"
+    "img": "/assets/images/chart-icon.svg",
+    "date": "14/02/18 18:45:46"
   }
 ]

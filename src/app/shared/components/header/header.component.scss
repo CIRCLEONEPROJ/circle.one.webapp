@@ -1,5 +1,8 @@
 header {
   //margin-bottom: 20px;
+  .mat-button {
+    min-width: 20px;
+  }
   .logo {
     max-height: 70px;
     width: 100%;
@@ -10,7 +13,9 @@ header {
       display: inline-block;
       padding: 10px;
       &:last-child {
-        margin-left: 5rem;
+        @media screen and (min-width: 1200px) {
+          margin-left: 5rem;
+        }
       }
       a {
         color: #333;

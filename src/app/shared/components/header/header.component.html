@@ -1,10 +1,18 @@
 <header>
   <mat-card class="container-fluid p-2">
-    <div class="container d-flex justify-content-between align-items-center">
+    <div class="container d-flex justify-content-between align-items-center p-0">
       <a routerLink="home"><img src="./assets/images/logo.svg" alt="logo" class="logo"></a>
-      <ul class="header-list">
-        <li class="header-list__item" *ngFor="let item of menu">
-          <a mat-button color="warn" routerLink="{{ item.href }}" class="d-flex align-items-center"><i class="material-icons mr-2">{{ item.icon }}</i> {{ item.name }} </a>
+      <div class="d-lg-none">
+        <button mat-button [matMenuTriggerFor]="menu"><i class="material-icons">menu</i></button>
+        <mat-menu #menu="matMenu">
+          <a routerLink="{{ item.href }}" *ngFor="let item of menuItems" mat-menu-item
+             class="d-flex align-items-center"><i class="material-icons mr-2">{{ item.icon }}</i> {{ item.name }} </a>
+        </mat-menu>
+      </div>
+      <ul class="header-list d-none d-lg-block">
+        <li class="header-list__item" *ngFor="let item of menuItems">
+          <a mat-button color="warn" routerLink="{{ item.href }}" class="d-flex align-items-center"><i
+            class="material-icons mr-2">{{ item.icon }}</i> {{ item.name }} </a>
         </li>
       </ul>
     </div>

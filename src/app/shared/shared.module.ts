@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule, DatePipe } from '@angular/common';
 import {
-  MatButtonModule, MatCardModule, MatDialogModule, MatFormFieldModule, MatIconModule, MatInputModule, MatTableModule,
+  MatButtonModule, MatCardModule, MatDialogModule, MatFormFieldModule, MatIconModule, MatInputModule, MatMenuModule, MatTableModule,
   MatTabsModule
 } from '@angular/material';
 import { ChartComponent } from './components/chart/chart.component';
@@ -18,7 +18,8 @@ import { ChartsModule } from 'ng2-charts';
     MatDialogModule,
     MatTabsModule,
     MatIconModule,
-    ChartsModule
+    ChartsModule,
+    MatMenuModule
   ],
   declarations: [ChartComponent],
   exports: [
@@ -32,7 +33,8 @@ import { ChartsModule } from 'ng2-charts';
     MatTabsModule,
     MatIconModule,
     ChartComponent,
-    ChartsModule
+    ChartsModule,
+    MatMenuModule
   ],
   providers: [DatePipe]
 })

@@ -1,4 +1,5 @@
-import {Component, OnInit} from '@angular/core';
+import { Component, OnInit, ViewChild } from '@angular/core';
+import { MatMenuTrigger } from '@angular/material';
 
 @Component({
   selector: 'app-header',
@@ -6,17 +7,25 @@ import {Component, OnInit} from '@angular/core';
   styleUrls: ['./header.component.scss']
 })
 export class HeaderComponent implements OnInit {
-  menu = [
+
+  menuItems = [
     {name: 'Streams', href: '/streams', icon: 'router'},
     {name: 'Datasets', href: '/datasets', icon: 'cast_connected'},
     {name: 'Sensors', href: '/sensors', icon: 'settings_remote'},
     {name: 'Dashboard', href: '/dashboard', icon: 'dashboard'}
   ];
 
+  @ViewChild(MatMenuTrigger) trigger: MatMenuTrigger;
+
+  someMethod() {
+    this.trigger.openMenu();
+  }
+
   constructor() {
   }
 
   ngOnInit() {
+    this.someMethod();
   }
 
 }
