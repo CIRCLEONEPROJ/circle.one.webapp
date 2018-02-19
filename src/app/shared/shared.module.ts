@@ -6,6 +6,7 @@ import {
 } from '@angular/material';
 import { ChartComponent } from './components/chart/chart.component';
 import { ChartsModule } from 'ng2-charts';
+import { ModalComponent } from './components/modal/modal.component';
 
 @NgModule({
   imports: [
@@ -21,7 +22,7 @@ import { ChartsModule } from 'ng2-charts';
     ChartsModule,
     MatMenuModule
   ],
-  declarations: [ChartComponent],
+  declarations: [ChartComponent, ModalComponent],
   exports: [
     CommonModule,
     MatTableModule,

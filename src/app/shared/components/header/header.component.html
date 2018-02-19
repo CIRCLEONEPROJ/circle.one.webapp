@@ -9,7 +9,7 @@
              class="d-flex align-items-center"><i class="material-icons mr-2">{{ item.icon }}</i> {{ item.name }} </a>
         </mat-menu>
       </div>
-      <ul class="header-list d-none d-lg-block">
+      <ul class="header-list d-none d-lg-flex">
         <li class="header-list__item" *ngFor="let item of menuItems">
           <a mat-button color="warn" routerLink="{{ item.href }}" class="d-flex align-items-center"><i
             class="material-icons mr-2">{{ item.icon }}</i> {{ item.name }} </a>

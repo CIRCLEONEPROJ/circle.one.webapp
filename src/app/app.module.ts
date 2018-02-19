@@ -23,6 +23,7 @@ import { CarouselModule } from './shared/components/carousel/carousel.module';
 import { Ng2CarouselamosModule } from 'ng2-carouselamos';
 import { ItemRedirectComponent } from './core/route/item-redirect/item-redirect.component';
 import { Angular2FontawesomeModule } from 'angular2-fontawesome';
+import { ContractsService } from './core/services/contracts.service';
 
 @NgModule({
   declarations: [
@@ -50,7 +51,7 @@ import { Angular2FontawesomeModule } from 'angular2-fontawesome';
     Angular2FontawesomeModule
 
   ],
-  providers: [SensorService, StreamService, DatasetService],
+  providers: [SensorService, StreamService, DatasetService, ContractsService],
   bootstrap: [AppComponent]
 })
 export class AppModule {
