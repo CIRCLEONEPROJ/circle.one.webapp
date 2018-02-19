@@ -24,6 +24,8 @@ import { Ng2CarouselamosModule } from 'ng2-carouselamos';
 import { ItemRedirectComponent } from './core/route/item-redirect/item-redirect.component';
 import { Angular2FontawesomeModule } from 'angular2-fontawesome';
 import { ContractsService } from './core/services/contracts.service';
+import { EthereumModule } from './ethereum/ethereum.module';
+import { environment } from '../environments/environment';
 
 @NgModule({
   declarations: [
@@ -48,11 +50,17 @@ import { ContractsService } from './core/services/contracts.service';
     BrowserAnimationsModule,
     SharedModule,
     Ng2CarouselamosModule,
-    Angular2FontawesomeModule
+    Angular2FontawesomeModule,
+    EthereumModule.forRoot(
+      {
+        proveContractAddress: environment.proveContractAddress,
+        purchaseContractAddress: environment.purchaseContractAddress
+      }
+    )
 
   ],
-  providers: [SensorService, StreamService, DatasetService, ContractsService],
-  bootstrap: [AppComponent]
+  providers: [ SensorService, StreamService, DatasetService, ContractsService ],
+  bootstrap: [ AppComponent ]
 })
 export class AppModule {
 }
