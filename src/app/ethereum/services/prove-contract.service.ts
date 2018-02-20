@@ -5,6 +5,7 @@ import { Contract } from 'web3/types';
 import { proveContractAbi } from '../abi/prove-contract-abi';
 import { Observable } from 'rxjs/Observable';
 import { of } from 'rxjs/observable/of';
+import { PURCHASE_CONTRACT_ADDRESS } from '../tokens/purchase-contract-address.token';
 
 @Injectable()
 export class ProveContractService {
@@ -12,13 +13,18 @@ export class ProveContractService {
   private contract: Contract;
 
   constructor( private web3Service: Web3Service,
-               @Inject(PROVE_CONTRACT_ADDRESS) private address ) {
+               @Inject(PROVE_CONTRACT_ADDRESS) private address,
+               @Inject(PURCHASE_CONTRACT_ADDRESS) private purchaseAddress ) {
     this.init();
     this.allowance();
   }
 
-  approve(): Observable<any> {
-    return of(null);
+  async approve( price: number ): Promise<any> {
+    const account = await this.web3Service.getAccount();
+    await this.contract.methods.approve(this.purchaseAddress, price).send({
+        from: account
+      }
+    );
   }
 
   allowance(): Observable<any> {
@@ -34,6 +40,11 @@ export class ProveContractService {
 
   decreaseApproval(): Observable<any> {
     return of(null);
+  }
+
+  async getBalance(): Promise<number> {
+    const account = await this.web3Service.getAccount();
+    return this.contract.methods.balanceOf(account).call();
   }
 
   private init() {

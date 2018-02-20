@@ -5,6 +5,7 @@ import { Web3Service } from './services/web3.service';
 import { ProveContractService } from './services/prove-contract.service';
 import { PurchaseContractService } from './services/purchase-contract.service';
 import { IEthereumModuleConfig } from './interfaces/ethereum-module-config.interface';
+import { INFURA_ADDRESS } from './tokens/infura-address.token';
 
 @NgModule({
   imports: [],
@@ -17,6 +18,7 @@ export class EthereumModule {
       providers: [
         { provide: PROVE_CONTRACT_ADDRESS, useValue: config.proveContractAddress },
         { provide: PURCHASE_CONTRACT_ADDRESS, useValue: config.purchaseContractAddress },
+        { provide: INFURA_ADDRESS, useValue: config.infuraAddress },
         Web3Service,
         ProveContractService,
         PurchaseContractService

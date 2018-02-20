@@ -1,0 +1,32 @@
+<div *ngIf="user">
+  <p class="text-center">
+    {{item.name}}
+  </p>
+  <div>
+    <p [ngClass]="balanceClasses">Your current balance: {{user.circleTokens | number}} Cs</p>
+    <p>Item price: {{item.price | number}} Cs / per Day</p>
+  </div>
+  <form [formGroup]="form" novalidate (ngSubmit)="purchase()">
+    <mat-form-field>
+      <input matInput [matDatepicker]="startPicker" placeholder="Choose start date" formControlName="dateStart"
+             [max]="(dateEnd.value && dateEnd.value < now)? dateEnd.value : now">
+      <mat-datepicker-toggle matSuffix [for]="startPicker"></mat-datepicker-toggle>
+      <mat-datepicker #startPicker="matDatepicker"></mat-datepicker>
+    </mat-form-field>
+    <mat-form-field>
+      <input matInput [matDatepicker]="endPicker" placeholder="Choose end date" formControlName="dateEnd"
+             [min]="dateStart.value"
+             [max]="now">
+      <mat-datepicker-toggle matSuffix [for]="endPicker"></mat-datepicker-toggle>
+      <mat-datepicker #endPicker="matDatepicker"></mat-datepicker>
+    </mat-form-field>
+    <div class="d-flex justify-content-center">
+      <mat-spinner *ngIf="loading"></mat-spinner>
+    </div>
+    <p class="text-danger text-center" *ngIf="messageError">{{messageError}}</p>
+    <div class="py-2 text-center">
+      <button type="submit" [disabled]="loading" mat-raised-button color="warn">Confirm Buy</button>
+      <button type="button" [disabled]="loading" mat-raised-button (click)="cancel()">Cancel</button>
+    </div>
+  </form>
+</div>

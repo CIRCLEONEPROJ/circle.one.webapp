@@ -16,7 +16,10 @@
 
     <ng-container matColumnDef="verified">
       <mat-header-cell *matHeaderCellDef> Verified</mat-header-cell>
-      <mat-cell *matCellDef="let element"> {{element.verified}}</mat-cell>
+      <mat-cell *matCellDef="let element">
+        <i *ngIf="element.verified==='Yes'" style="color: green" class="material-icons">done</i>
+        <i *ngIf="element.verified==='No'" style="color: red" class="material-icons">clear</i>
+      </mat-cell>
     </ng-container>
 
     <ng-container matColumnDef="type">
@@ -30,8 +33,8 @@
     </ng-container>
 
     <ng-container matColumnDef="price/hour">
-      <mat-header-cell *matHeaderCellDef> Price/Hour </mat-header-cell>
-      <mat-cell *matCellDef="let element">$ {{element.price}}</mat-cell>
+      <mat-header-cell *matHeaderCellDef> Price</mat-header-cell>
+      <mat-cell *matCellDef="let element">{{element.price | number}} Cs</mat-cell>
     </ng-container>
 
     <mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>

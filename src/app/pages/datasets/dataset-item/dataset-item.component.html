@@ -8,29 +8,36 @@
     </div>
     <div class="col-md-8 col-12">
       <div class="col-12 mat-card d-flex flex-sm-column flex-md-row flex-column">
-        <div class="col-md-6 col-xs-12 col-lg-6 col-sm-12 p-0 d-flex flex-column align-items-start justify-content-center">
+        <div
+          class="col-md-6 col-xs-12 col-lg-6 col-sm-12 p-0 d-flex flex-column align-items-start justify-content-center">
           <div class="w-100">
             <div class="d-flex align-items-center justify-content-between">
               <span>Rating</span>
-                <div>
-                  <mat-icon color="warn" class="material-icons">star</mat-icon>
-                  <mat-icon color="warn" class="material-icons">star</mat-icon>
-                  <mat-icon color="warn" class="material-icons">star</mat-icon>
-                  <mat-icon color="warn" class="material-icons">star</mat-icon>
-                  <mat-icon color="warn" class="material-icons">star_half</mat-icon>
-                </div>
+              <div>
+                <mat-icon color="warn" class="material-icons">star</mat-icon>
+                <mat-icon color="warn" class="material-icons">star</mat-icon>
+                <mat-icon color="warn" class="material-icons">star</mat-icon>
+                <mat-icon color="warn" class="material-icons">star</mat-icon>
+                <mat-icon color="warn" class="material-icons">star_half</mat-icon>
+              </div>
             </div>
             <hr>
             <p>Type: {{dataset.type}}</p>
-            <p>Frequency: {{dataset.frequency}}</p>
-            <p>Verified: {{dataset.verified}}</p>
+            <p>Frequency: per day</p>
+            <!--<p>Frequency: {{dataset.frequency}}</p>-->
+            <p class="d-flex align-items-center">
+              <span class="mr-1">Verified: </span>
+              <i *ngIf="dataset.verified==='Yes'" style="color: green" class="material-icons">done</i>
+              <i *ngIf="dataset.verified==='No'" style="color: red" class="material-icons">clear</i>
+            </p>
           </div>
           <div class="w-100 my-4">
-            <p>Price: $ {{dataset.price}} / {{dataset.frequency}}</p>
-            <mat-form-field color="warn" class="mr-3 w-25">
+            <!--<p>Price: $ {{dataset.price}} / {{dataset.frequency}}</p>-->
+            <p>Price: {{dataset.price}} Cs / per day</p>
+            <!--<mat-form-field color="warn" class="mr-3 w-25">
               <input matInput placeholder="Quantity" type="number" min="1">
-            </mat-form-field>
-            <button mat-raised-button color="warn" class="w-100">Buy</button>
+            </mat-form-field>-->
+            <button mat-raised-button color="warn" class="w-100" (click)="showPurchaseDialog(dataset)">Buy</button>
           </div>
         </div>
         <div class="col-md-6 col-xs-12 col-sm-12 col-lg-6">
@@ -67,7 +74,9 @@
         </mat-tab>
         <mat-tab label="Sample Data">
           <div class="m-4">
-            <p class="mr-5">{{dataset.name}} sample JSON</p><a style="width: 60px;" href="#" class="d-flex align-items-center justify-content-between"><i class="material-icons mr-3">file_download</i>Download</a>
+            <p class="mr-5">{{dataset.name}} sample JSON</p><a style="width: 60px;" href="#"
+                                                               class="d-flex align-items-center justify-content-between"><i
+            class="material-icons mr-3">file_download</i>Download</a>
           </div>
         </mat-tab>
       </mat-tab-group>

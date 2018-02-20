@@ -1,0 +1,10 @@
+mat-spinner {
+  height: 50px !important;
+  width: 50px !important;
+  ::ng-deep {
+    svg {
+      width: 100% !important;
+      height: 100% !important;
+    }
+  }
+}

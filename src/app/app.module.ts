@@ -26,6 +26,8 @@ import { Angular2FontawesomeModule } from 'angular2-fontawesome';
 import { ContractsService } from './core/services/contracts.service';
 import { EthereumModule } from './ethereum/ethereum.module';
 import { environment } from '../environments/environment';
+import { Ng2Webstorage } from 'ngx-webstorage';
+import { CoreModule } from './core/core.module';
 
 @NgModule({
   declarations: [
@@ -42,6 +44,11 @@ import { environment } from '../environments/environment';
   imports: [
     BrowserModule,
     NgbModule.forRoot(),
+    Ng2Webstorage.forRoot({
+      prefix: 'circle',
+      separator: '.',
+      caseSensitive: false
+    }),
     HttpClientModule,
     AppRoutingModule,
     FormsModule,
@@ -51,13 +58,8 @@ import { environment } from '../environments/environment';
     SharedModule,
     Ng2CarouselamosModule,
     Angular2FontawesomeModule,
-    EthereumModule.forRoot(
-      {
-        proveContractAddress: environment.proveContractAddress,
-        purchaseContractAddress: environment.purchaseContractAddress
-      }
-    )
-
+    CoreModule,
+    EthereumModule.forRoot(environment.ethereumConfig)
   ],
   providers: [ SensorService, StreamService, DatasetService, ContractsService ],
   bootstrap: [ AppComponent ]

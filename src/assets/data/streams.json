@@ -2,7 +2,7 @@
   {
     "id": 1,
     "Verified": "Yes",
-    "Frequency": "Per hour",
+    "Frequency": "Per day",
     "containerId": "bpost-co2-100",
     "type": "CO2",
     "macAddress": "2D8784C003333009",
@@ -20,7 +20,7 @@
   {
     "id": 2,
     "Verified": "Yes",
-    "Frequency": "Per minute",
+    "Frequency": "Per day",
     "containerId": "bpost-co2-99",
     "type": "CO2",
     "macAddress": "2D8784C003333008",
@@ -38,7 +38,7 @@
   {
     "id": 3,
     "Verified": "No",
-    "Frequency": "Per second",
+    "Frequency": "Per day",
     "containerId": "bpost-co2-98",
     "type": "CO2",
     "macAddress": "2D8784C003333007",
@@ -56,7 +56,7 @@
   {
     "id": 4,
     "Verified": "Yes",
-    "Frequency": "Per minute",
+    "Frequency": "Per day",
     "containerId": "bpost-co2-97",
     "type": "CO2",
     "macAddress": "2D8784C003333006",
@@ -74,7 +74,7 @@
   {
     "id": 5,
     "Verified": "Yes",
-    "Frequency": "Per minute",
+    "Frequency": "Per day",
     "containerId": "bpost-co2-96",
     "type": "CO2",
     "macAddress": "2D8784C003333005",
@@ -92,7 +92,7 @@
   {
     "id": 6,
     "Verified": "Yes",
-    "Frequency": "Per minute",
+    "Frequency": "Per day",
     "containerId": "bpost-co2-95",
     "type": "CO2",
     "macAddress": "2D8784C003333004",
@@ -110,7 +110,7 @@
   {
     "id": 7,
     "Verified": "No",
-    "Frequency": "Per minute",
+    "Frequency": "Per day",
     "containerId": "bpost-co2-94",
     "type": "CO2",
     "macAddress": "2D8784C003333003",
@@ -128,7 +128,7 @@
   {
     "id": 8,
     "Verified": "No",
-    "Frequency": "Per minute",
+    "Frequency": "Per day",
     "containerId": "bpost-co2-93",
     "type": "CO2",
     "macAddress": "2D8784C003333003",
@@ -146,7 +146,7 @@
   {
     "id": 9,
     "Verified": "No",
-    "Frequency": "Per minute",
+    "Frequency": "Per day",
     "containerId": "bpost-temp-92",
     "type": "Temperature",
     "macAddress": "2D8784C003333003",
@@ -164,7 +164,7 @@
   {
     "id": 10,
     "Verified": "No",
-    "Frequency": "Per minute",
+    "Frequency": "Per day",
     "containerId": "bpost-co2-91",
     "type": "CO2",
     "macAddress": "2D8784C003333003",
@@ -182,7 +182,7 @@
   {
     "id": 11,
     "Verified": "No",
-    "Frequency": "Per minute",
+    "Frequency": "Per day",
     "containerId": "bpost-co2-90",
     "type": "CO2",
     "macAddress": "2D8784C003333003",
@@ -200,7 +200,7 @@
   {
     "id": 12,
     "Verified": "No",
-    "Frequency": "Per minute",
+    "Frequency": "Per day",
     "containerId": "bpost-temp-89",
     "type": "Temperature",
     "macAddress": "2D8784C003333003",

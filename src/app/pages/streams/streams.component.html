@@ -30,8 +30,8 @@
     </ng-container>
 
     <ng-container matColumnDef="price/hour">
-      <mat-header-cell *matHeaderCellDef> Price/Hour </mat-header-cell>
-      <mat-cell *matCellDef="let element">$ {{element.price}}</mat-cell>
+      <mat-header-cell *matHeaderCellDef> Price/Day </mat-header-cell>
+      <mat-cell *matCellDef="let element">{{element.price}} Cs</mat-cell>
     </ng-container>
 
     <mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>
