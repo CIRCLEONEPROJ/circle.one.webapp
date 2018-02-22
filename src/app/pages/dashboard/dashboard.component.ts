@@ -9,6 +9,7 @@ import { Observable } from 'rxjs/Observable';
 import { ProveContractService } from '../../ethereum/services/prove-contract.service';
 import { TransactionInfoDialogComponent } from '../../shared/components/transaction-info-dialog/transaction-info-dialog.component';
 import { PurchaseContractService } from '../../ethereum/services/purchase-contract.service';
+import { Web3Service } from '../../ethereum/services/web3.service';
 
 @Component({
   selector: 'app-dashboard',
@@ -21,11 +22,13 @@ export class DashboardComponent implements OnInit, OnDestroy {
   dataSource = new MatTableDataSource();
   user$: Observable<IUser>;
   circleTokens: number;
+  ethTokens: number;
   contractLink = '';
   private sub: Subscription;
 
   constructor( private svc: StreamService,
                private authService: AuthService,
+               private web3Service: Web3Service,
                private purchaseService: PurchaseService,
                private proveContractService: ProveContractService,
                private purchaseContractService: PurchaseContractService,
@@ -37,8 +40,10 @@ export class DashboardComponent implements OnInit, OnDestroy {
   async ngOnInit() {
     this.contractLink = this.purchaseContractService.etherscanLink;
     try {
+      this.ethTokens = await this.web3Service.getBalance();
       this.circleTokens = await this.proveContractService.getBalance();
     } catch ( err ) {
+      alert(err);
       console.log(err);
     }
     this.user$ = this.authService.user;

@@ -13,6 +13,7 @@ export class PurchaseDialogComponent implements OnInit {
   loading: boolean;
   item: any;
   user: IUser;
+  balance: string;
   form: FormGroup;
   now = new Date();
   messageError: string;
@@ -27,6 +28,7 @@ export class PurchaseDialogComponent implements OnInit {
   ngOnInit() {
     this.createForm();
     this.item = this.data.item;
+    this.balance = this.data.balance;
     this.authService.user.subscribe(( user ) => this.user = user);
   }
 

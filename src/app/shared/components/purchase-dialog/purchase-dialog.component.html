@@ -3,7 +3,7 @@
     {{item.name}}
   </p>
   <div>
-    <p [ngClass]="balanceClasses">Your current balance: {{user.circleTokens | number}} Cs</p>
+    <p [ngClass]="balanceClasses">Your current balance: {{balance | number}} Cs</p>
     <p>Item price: {{item.price | number}} Cs / per Day</p>
   </div>
   <form [formGroup]="form" novalidate (ngSubmit)="purchase()">

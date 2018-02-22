@@ -40,4 +40,10 @@ export class Web3Service {
     console.log(accounts);
   }
 
+  async getBalance(): Promise<any> {
+    const account = await this.getAccount();
+    const balance = await this.web3.eth.getBalance(account);
+    return this.web3.utils.fromWei(balance, 'ether');
+  }
+
 }
